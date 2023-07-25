@@ -1,22 +1,23 @@
 import React, { useState } from "react";
-import usePatientInfo from "../CustomHooks/usePatientInfo";
-import MultiRangeSlider from "./MultiRangeSlider";
+import usePatientInfo from "../../CustomHooks/usePatientInfo";
+import MultiRangeSlider from "../MultiRangeSlider";
+import './patientHistoryGraph.css'
 
 const PatientHistoryGraph = () => {
   const [ageFilter, setAgeFilter] = useState({min: 10, max: 20});
   const patientData = usePatientInfo(ageFilter);
-  console.log(patientData)
 
   return (
-    <div>
-      <div>
+    <div className="patient-history-wrapper">
+      <div className="age-filter-wrapper">
+        <div>Filter by age</div>
         <MultiRangeSlider min={0}
           max={100}
           onChange={setAgeFilter}
         />
       </div>
-      <table>
-        <thead>
+      <table className="patient-history-table">
+        <thead className="patient-history-thead">
           <tr>
             <th>Id</th>
             <th>Name</th>

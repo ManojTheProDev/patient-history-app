@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -26,6 +26,93 @@
 
 .App-link {
   color: #61dafb;
+}
+
+header {
+  width: 120px;
+  background-color: #1959f9;
+  flex-direction: column;
+  display: flex;
+  color: #fff;
+  height: 100vh;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-bottom > span {
+  padding: 15px;
+}
+
+header img {
+  width: -webkit-fill-available;
+  max-width: 100%;
+}
+
+.patient-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px;
+}
+
+.patient-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.patient-search {
+  position: relative;
+  display: flex;
+  flex: 1;
+}
+
+.patient-search .icon-search {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+}
+
+.patient-search input {
+  height: 45px;
+  padding-left: 30px;
+  width: 60%;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+}
+
+.record-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.record-wrapper > span, .record-wrapper > div {
+  padding-left: 10px;
+}
+
+.icon-stop {
+  color: #e70202;
+}
+
+.patient-search-wrapper h4 {
+  display: flex;
+  margin: 0;
 }
 
 @keyframes App-logo-spin {

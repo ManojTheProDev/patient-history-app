@@ -1,0 +1,35 @@
+.age-filter-wrapper, .age-filter-wrapper > div, .patient-history-wrapper {
+    display: flex;
+}
+
+.patient-history-wrapper {
+    flex-direction: column;
+}
+
+.age-filter-wrapper {
+    align-items: center;
+}
+
+.age-filter-wrapper > div:first-child {
+    padding: 30px;
+}
+
+.patient-history-table {
+    border-spacing: 0;
+    padding-top: 30px;
+}
+
+.patient-history-thead > tr > th, .patient-history-table tbody td {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-right-width: 0;
+}
+
+.patient-history-thead > tr > th:last-child, .patient-history-table tbody tr td:last-child {
+    border-right-width: 1px;
+}
+
+.patient-history-table tbody tr:nth-child(odd) {
+    background-color: #dcdcdc;
+}
