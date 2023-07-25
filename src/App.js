@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import PatientHistoryGraph from "./Components/PatientHistoryGraph";
+import Header from "./Components/Header";
+import PatientContainer from "./Components/PatientContainer";
+import './assets/style.css'
 
 function App() {
   return (
     <div className="App">
-      <PatientHistoryGraph />
+      <Header />
+      <PatientContainer />
     </div>
   );
 }
